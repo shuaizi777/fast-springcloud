@@ -15,6 +15,10 @@
     <properties>
         <maven-compiler-plugin>2.3.2</maven-compiler-plugin>
         <spring-cloud-dependencies>Greenwich.SR2</spring-cloud-dependencies>
+        <hutool-all>5.1.2</hutool-all>
+        <springfox-swagger2>2.9.2</springfox-swagger2>
+        <swagger-bootstrap-ui>1.8.7</swagger-bootstrap-ui>
+        <lombok>1.16.20</lombok>
     </properties>
 
     <parent>
@@ -24,6 +28,21 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger2}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>${swagger-bootstrap-ui}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
